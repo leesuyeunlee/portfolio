@@ -13,8 +13,8 @@ const webS = new Swiper('.web .swiper',{
 
 //sns swiper
 const snsS = new Swiper('.sns .swiper',{
-    slidesPerView:2,//한번에 보일 슬라이드 수 (모바일)
-    spaceBetween:20,//슬라이드 사이 여백
+    slidesPerView:3,//한번에 보일 슬라이드 수 (모바일)
+    spaceBetween:10,//슬라이드 사이 여백
     autoplay:{delay:1,desableOnInteration:true,},//delay 전환속도, desable넣으면 자연스럽게 전환
     loop:true,
     speed:8000,
@@ -28,7 +28,7 @@ const snsS = new Swiper('.sns .swiper',{
 
 //detail swiper
 const detailS = new Swiper('.detail .swiper',{
-    slidesPerView:2,//모바일수
+    slidesPerView:4,//모바일수
     spaceBetween:20,
     autoplay:{delete:2000},
     loop:true,
