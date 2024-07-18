@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'Kegina';
+    src: url('fonts/Kegina-Bold.eot');
+    src: url('fonts/Kegina-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Kegina-Bold.woff2') format('woff2'),
+        url('fonts/Kegina-Bold.woff') format('woff'),
+        url('fonts/Kegina-Bold.ttf')  format('truetype'),
+        url('fonts/Kegina-Bold.svg#Kegina') format('svg');
+}
+/* 헤더 */
+header {
+    
+    border: 1px solid blue;
+    width: 100%;
+    z-index: 999;
+    /* display: flex;
+    flex-flow: row nowrap; */
+    /* position: fixed;
+    background:rgba(0,0,0,0.2); width: 100%; */
+    /* -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px); */
+}
+header nav {
+    border: 1px solid red;
+    margin: 30px 0 atuo;
+    width: calc(100% - 250px);
+    position: absolute;}
+/* header nav::after {/* nav가상선택자, 길이조절을 위해
+    content: ''; display: inline-block;
+    width: 1620px; height: 2.5px;
+    background: #fff;
+    position:absolute; left: 140px; bottom: -35px;} */
+header nav div {
+
+    display: flex;}
+header nav div a {border: 1px solid red;}
+/* header nav div a:nth-child(1) {margin-left: 156px;} */
+header nav div a p {
+    font-family: 'Kegina';
+    font-weight: Bold;
+    font-size: 1.25rem;
+    color: #fff;
+    margin-right: 109px;
+    font-weight: 700;
+}
+
+/* header nav div a p img{
+    width:100%;
+    align-items: center;
+    padding: 46px 40px 30px 0} */
+.bg_1 {}
+.bg_1 p {}
+.bg_1 p img{width: 100%;}
+
+/* 프로필 */
+.profile {
+    border-radius: 50px;
+    margin: 200px 100px;
+    width: 1720px; height: 1342px;
+    border: 1px solid #AAAAAA;
+}
+.profile .profile_list {
+    display: flex; flex-flow: column;
+    justify-content: center;
+    display: flex;
+    margin: 175px 100px;
+}
+.profile .profile_list .top_profile { 
+    align-items: center;
+    display: flex;
+    border: 1px solid red;}
+.profile .profile_list .top_profile .photo{
+    border: 1px solid red;
+
+}
+.profile .profile_list .top_profile .photo img{    width: 600px; height: 942px;}
+.profile .profile_list .top_profile .txt_1{
+    display: flex; flex-flow: column;
+    margin: 132.5px 0;
+    border: 1px solid blue;
+
+}
+.profile .profile_list .top_profile .txt_1 .list_top{display: flex;}
+.profile .profile_list .top_profile .txt_1 .list_top h2{}
+.profile .profile_list .top_profile .txt_1 .list_top ul{}
+.profile .profile_list .top_profile .txt_1 .list_top ul li{
+}
+.profile .profile_list .top_profile .txt_1 .list_bottom{
+    border: 1px solid red;
+    display: flex;flex-flow: row;}
+.profile .profile_list .top_profile .txt_1 .list_bottom h2 {
+    border: 1px solid red;
+}
+.profile .profile_list .top_profile .txt_1 .list_bottom ul {}
+.profile .profile_list .top_profile .txt_1 .list_bottom ul li{}
+.profile .profile_list .txt_2 {display: flex;}
+.profile .profile_list .txt_2 ul {}
+
+
+/*  스킬 */
+.skill {}
+.skill p{
+    text-align: center;
+
+}
+.skill div{
+    display: flex;
+    justify-content: center;
+}
+.skill .skill_img p{
+    margin: 50px 100px;
+    border: 1px solid red
+}
+.skill div p img{
+    width:100%;}
+
+/* 프로젝트리스트 bg */
+.project_list {
+    background: url(../images/bg.jpg);
+    background-size: cover;
+
+}
+.project_list p {
+    text-align: center;
+}
+.project_list .center_title{
+    padding-top: 170px;
+    margin: 42.44px 0;
+}
+.project_list .sub_title{
+    margin: 151.35px 0;
+
+}
+
+/* 웹 */
+.project_list .web{position: relative;} /* 화살표버튼 안으로 들어오게하는거 , swiper 클래스 대상의 안에 작성했을 땐 swiper가 absolute를 잡는 relative 기본내장으로 별도 설정은 안해도 되지만 밖에 작성했을 땐 밖 위치 기준으로 그 부모에게 relative 설정을 따로 해줘야 한다*/
+.project_list .web .swiper{
+    
+    max-width: 1920px;} /* 화살표버튼 안으로 들어오게하는거 */
+.project_list .web .swiper-slide {
+    padding: 0 200px;
+    border: 1px solid blue;
+    display: flex;
+    align-items: center;
+}
+.project_list .web .swiper-slide .thum{
+    margin-right: 100px;
+    border: 1px solid red;
+    width: 600px; height: 500px;}
+.project_list .web .swiper-slide .thum img{
+    border-radius: 10%;
+    width: 100%;}
+.project_list .web div[class^=swiper-button] 
+{
+    width: 100px; height: 100px;
+    border: 1px solid rgba(1,1,1,0.15);
+    border-radius: 100%;
+    margin: 0 50px;
+    color: #d9d9d9;
+    transform: scale(0.4);
+}
+
+/* 팀 */
+.project_list .team{position: relative;} /* 화살표버튼 안으로 들어오게하는거 , swiper 클래스 대상의 안에 작성했을 땐 swiper가 absolute를 잡는 relative 기본내장으로 별도 설정은 안해도 되지만 밖에 작성했을 땐 밖 위치 기준으로 그 부모에게 relative 설정을 따로 해줘야 한다*/
+.project_list .team .swiper{
+    
+    max-width: 1920px;} /* 화살표버튼 안으로 들어오게하는거 */
+.project_list .team .swiper-slide {
+    padding: 0 200px;
+    border: 1px solid blue;
+    display: flex;
+    align-items: center;
+}
+.project_list .team .swiper-slide .thum{
+    margin-right: 100px;
+    border: 1px solid red;
+    width: 600px; height: 500px;}
+.project_list .team .swiper-slide .thum img{
+    border-radius: 10%;
+    width: 100%;}
+.project_list .team div[class^=swiper-button] 
+{
+    width: 100px; height: 100px;
+    border: 1px solid rgba(1,1,1,0.15);
+    border-radius: 100%;
+    margin: 0 50px;
+    color: #d9d9d9;
+    transform: scale(0.4);
+}
+
