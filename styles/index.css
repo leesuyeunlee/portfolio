@@ -176,11 +176,11 @@ header nav div a p img{
     flex-flow: column;
     justify-content: center;
 }
-.project_list .web .swiper-slide .web_info h3{
-    font-size: 1.75rem;
-    text-align: center;
-    font-weight: 700;
+.project_list .web .swiper-slide .web_info p{
+    margin: 0 auto;
+    width: 100px;
 }
+.project_list .web .swiper-slide .web_info p img{width: 100%;}
 .project_list .web .swiper-slide .web_info .info_top {
     margin: 50px;
 }
@@ -233,11 +233,13 @@ header nav div a p img{
     flex-flow: column;
     justify-content: center;
 }
-.project_list .team .swiper-slide .web_info h3{
-    font-size: 1.75rem;
-    text-align: center;
-    font-weight: 700;
-}
+.project_list .team .swiper-slide .web_info p{
+    margin: 0 auto;
+    width: 200px;}
+.project_list .team .swiper-slide .web_info p img{
+    width: 100%;}
+
+
 .project_list .team .swiper-slide .web_info .info_top {
     margin: 50px;
 }
@@ -247,6 +249,8 @@ header nav div a p img{
 .project_list .team .swiper-slide .web_info .info_center .info_center_right{
     margin-right: 20px;
 }
+.project_list .team .swiper-slide .web_info .info_center .info_center_right li:nth-child(4){
+    margin: 45px 0;}
 .project_list .team .swiper-slide .web_info .info_center ul {
 }
 .project_list .team .swiper-slide .web_info .info_top ul li{margin:20px 0;}
