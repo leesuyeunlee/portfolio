@@ -1,6 +1,6 @@
 // web swiper
 const webS = new Swiper('.web .swiper',{
-    autoplay:{delete:1000},
+    //autoplay:{delete:1000},
     loop:true,
     navigation:{//2*
         nextEl:'.web .swiper-button-next',
@@ -68,3 +68,19 @@ big_bg.addEventListener('click',()=>{
     big_bg.style.display = 'none'
     document.body.style.overflow = '';//(4)위에숨긴스크롤을 팝업닫으면 생성
 })
+
+//skill info
+const skill_img = document.querySelectorAll('.skill dd .skill_img')
+const skill_con = document.querySelectorAll('.skill .skill_info .skill_con')
+console.log(skill_img, skill_con)
+for(let i of skill_con){i.style.display='none'}
+                skill_img.forEach(function(t,i,a){
+                    t.addEventListener('mouseover',function(){
+                        for(let j of skill_con){j.style.display='none'}
+                        skill_con[i].style.display='block'
+                    })
+                })
+                for(let i of skill_img){i.addEventListener('mouseout',function(){
+                    for(let j of skill_con){j.style.display='none'}
+                })}
+

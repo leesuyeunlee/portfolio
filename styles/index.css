@@ -1,15 +1,7 @@
-@font-face {
-    font-family: 'Kegina';
-    src: url('fonts/Kegina-Bold.eot');
-    src: url('fonts/Kegina-Bold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Kegina-Bold.woff2') format('woff2'),
-        url('fonts/Kegina-Bold.woff') format('woff'),
-        url('fonts/Kegina-Bold.ttf')  format('truetype'),
-        url('fonts/Kegina-Bold.svg#Kegina') format('svg');
-}
+
 /* 공통 */
 .profile, .project_list > div {
-    max-width: 1200px; margin:0 auto;
+    max-width: 1542px; margin:0 auto;
 }
 /* 헤더 */
 header {
@@ -44,12 +36,9 @@ header nav div {
 header nav div a {
     
     padding: 21px;
-    margin-right: 113px;
-    border: 1px solid red;}
+    margin-right: 113px;}
 /* header nav div a:nth-child(1) {margin-left: 156px;} */
 header nav div a p {
-    font-family: 'Kegina';
-    font-weight: Bold;
     font-size: 1.25rem;
     color: #fff;
     font-weight: 700;
@@ -61,27 +50,31 @@ header nav div a p img{
     padding: 46px 40px 30px 0}
 .bg_1 {}
 .bg_1 p {}
-.bg_1 p img{width: 100%;}
+.bg_1 p img{
+    margin-bottom: 200px;
+    width: 100%;
+}
 
 /* 프로필 */
 .profile {
     border: 1px solid #AAAAAA;
+    border-radius: 5%;
 }
 .profile .profile_list {
+    margin: 132.5px 100px;
 }
-.profile .profile_list .top_profile { 
-    display: flex;
-    border: 1px solid red;}
+.profile .profile_list .center_title{margin: 42px;}
+.profile .profile_list .top_profile {
+    align-items: center;
+    display: flex;}
 .profile .profile_list .top_profile .photo{
-
-
 }
 .profile .profile_list .top_profile .photo img{
-    width: 636px; height: 942px;}
+    width: 100%;}
 .profile .profile_list .top_profile .txt_1{
+
 }
 .profile .profile_list .top_profile .txt_1 .list{
-    border: 1px solid red;
     display: flex; flex-flow: row wrap;
     display: grid;
     grid-template-areas: 
@@ -99,30 +92,42 @@ header nav div a p img{
 .profile .profile_list .top_profile .txt_1 .list{}
 
 .profile .profile_list .top_profile .txt_1 .list_bottom h2 {
-    border: 1px solid red;
 }
 .profile .profile_list .top_profile .txt_1 .list_bottom ul {}
 .profile .profile_list .top_profile .txt_1 .list_bottom ul li{}
-.profile .profile_list .txt_2 {display: flex;}
+.profile .profile_list .txt_2 {
+    margin-left: 50px;
+    align-items: center; 
+    display: flex;
+}
 .profile .profile_list .txt_2 ul {}
 
 
 /*  스킬 */
-.skill {}
-.skill p{
+.skill {
+    margin-top: 200px;
+}
+.skill dt p{
     text-align: center;
 
 }
-.skill div{
+.skill dd{
+
     display: flex;
     justify-content: center;
-}
-.skill .skill_img p{
     margin: 50px 50px;
-    border: 1px solid red
 }
-.skill div p img{
-    width:100%;}
+.skill dd img{
+    margin-right: 40px;
+    width: 100px; height: 100px;
+    transform: scale(1.0);
+    transition: all 0.5s;
+}
+
+.skill dd img:hover{
+    transform: scale(1.15);
+    transition: transform 0.5s;
+}
 
 /* 프로젝트리스트 bg */
 .project_list {
@@ -138,7 +143,7 @@ header nav div a p img{
     margin: 42.44px 0;
 }
 .project_list .sub_title{
-    margin: 151.35px 0;
+    padding: 151.35px 0;
 
 }
 
@@ -147,14 +152,14 @@ header nav div a p img{
 .project_list .web .swiper{
     max-width: 1920px;} /* 화살표버튼 안으로 들어오게하는거 */
 .project_list .web .swiper-slide {
-    padding: 100px 200px;
-    border: 1px solid blue;
-    display: flex;
+    width: 1520px;
     align-items: center;
+    padding: 20px 100px;
+    display: flex;
 }
 .project_list .web .swiper-slide .thum{
-    border: 1px solid yellow;
-    width: 600px;}
+    width: 600px;
+}
 .project_list .web .swiper-slide .thum img{
     border-radius: 10%;
     width: 100%;}
@@ -166,21 +171,52 @@ header nav div a p img{
     color: #d9d9d9;
     transform: scale(0.4);
 }
+.project_list .web .swiper-slide .web_info {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.project_list .web .swiper-slide .web_info h3{
+    font-size: 1.75rem;
+    text-align: center;
+    font-weight: 700;
+}
+.project_list .web .swiper-slide .web_info .info_top {
+    margin: 50px;
+}
+.project_list .web .swiper-slide .web_info .info_center{
+    display: flex;
+}
+.project_list .web .swiper-slide .web_info .info_center .info_center_right{
+    margin-right: 20px;
+}
+.project_list .web .swiper-slide .web_info .info_center ul {
+}
+.project_list .web .swiper-slide .web_info .info_top ul li{margin:20px 0;}
+.project_list .web .swiper-slide .web_info .link{
+    text-align: center;
+}
+.project_list .web .swiper-slide .web_info .link a{
+    margin-right: 20px;
+    padding: 5px 50px;
+    color: #A2B0D3;
+    background-color: #fff;
+    border-radius: 50px;
+}
 
 /* 팀 */
 .project_list .team{position: relative;} /* 화살표버튼 안으로 들어오게하는거 , swiper 클래스 대상의 안에 작성했을 땐 swiper가 absolute를 잡는 relative 기본내장으로 별도 설정은 안해도 되지만 밖에 작성했을 땐 밖 위치 기준으로 그 부모에게 relative 설정을 따로 해줘야 한다*/
 .project_list .team .swiper{
-    
     max-width: 1920px;} /* 화살표버튼 안으로 들어오게하는거 */
 .project_list .team .swiper-slide {
-    padding: 0 200px;
-    border: 1px solid blue;
-    display: flex;
+    width: 1520px;
     align-items: center;
+    padding: 20px 100px;
+    display: flex;
 }
 .project_list .team .swiper-slide .thum{
-    border: 1px solid yellow;
-    width: 600px;}
+    width: 600px;
+}
 .project_list .team .swiper-slide .thum img{
     border-radius: 10%;
     width: 100%;}
@@ -192,7 +228,38 @@ header nav div a p img{
     color: #d9d9d9;
     transform: scale(0.4);
 }
-
+.project_list .team .swiper-slide .web_info {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.project_list .team .swiper-slide .web_info h3{
+    font-size: 1.75rem;
+    text-align: center;
+    font-weight: 700;
+}
+.project_list .team .swiper-slide .web_info .info_top {
+    margin: 50px;
+}
+.project_list .team .swiper-slide .web_info .info_center{
+    display: flex;
+}
+.project_list .team .swiper-slide .web_info .info_center .info_center_right{
+    margin-right: 20px;
+}
+.project_list .team .swiper-slide .web_info .info_center ul {
+}
+.project_list .team .swiper-slide .web_info .info_top ul li{margin:20px 0;}
+.project_list .team .swiper-slide .web_info .link{
+    text-align: center;
+}
+.project_list .team .swiper-slide .web_info .link a{
+    margin-right: 20px;
+    padding: 5px 50px;
+    color: #A2B0D3;
+    background-color: #fff;
+    border-radius: 50px;
+}
 /* 3-3. sns */
 .project_list .sns {max-width:1920px;}/* 다른아이템은 화면중앙맞춰져있지만 sns아이템은 화면풀로잡기위해 */
 .project_list .sns .swiper-wrapper {transition-timing-function: linear;}/* 일정속도설정(2) */
@@ -234,7 +301,7 @@ header nav div a p img{
     width: 20px; height: 20px;/* h. 가로스크롤 생길때높이 */
 }
 .big_bg .img::-webkit-scrollbar-thumb {
-    background: #ff0;
+    background: #fff;
 }
 
 /* 반응형웹 1200, 800, 600 */

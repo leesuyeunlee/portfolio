@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>suyeun portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -44,7 +44,7 @@
                             <li>그린컴퓨터 아카데미 부평점
                                 디지털디자인 UI/UX 디자이너를 위한 반응형 웹디자인&웹퍼블리셔
                                 취업양성과정 수료</li>
-                            <li>비마이봉봉(디자인케이크)</li>
+                            <li>자영업(디자인케이크)</li>
                             <li>(주)중앙(사무회계)</li>
                             <li>(주)에코블럭(사무회계)</li>
                             <li>(사)한국해비타트전남동부지회(사무)</li>
@@ -88,18 +88,25 @@
             </div>
         </div>
     </div>
-    <div class="skill">
-        <p><img src="./images/skill.png" alt=""></p>
-        <div class="skill_img">            
-            <p><img src="./images/excel.png" alt=""></p>
-            <p><img src="./images/photoshop.png" alt=""></p>
-            <p><img src="./images/ilustrator.png" alt=""></p>
-            <p><img src="./images/html.png" alt=""></p>
-            <p><img src="./images/css.png" alt=""></p>
-            <p><img src="./images/gitHub.png" alt=""></p>
-            <p><img src="./images/figma.png" alt=""></p>
-        </div>
-    </div>
+    <dl class="skill">
+        <dt>
+            <p><img src="./images/skill.png" alt=""></p>
+        </dt>
+        <dd>            
+            <img src="./images/excel.png" alt="엑셀" class="skill_img"></p>
+            <img src="./images/photoshop.png" alt="포토샵" class="skill_img"></p>
+            <img src="./images/ilustrator.png" alt="일러스트레이터" class="skill_img"></p>
+            <img src="./images/html.png" alt="HTML" class="skill_img"></p>
+            <img src="./images/css.png" alt="CSS" class="skill_img"></p>
+            <img src="./images/gitHub.png" alt="gitHub" class="skill_img"></p>
+            <img src="./images/figma.png" alt="Figma" class="skill_img"></p>
+        </dd>
+        <!-- <div class="skill_info">
+            <p id="photoshop" class="skill_con" style="display:none;">photoshop</p>
+            <p id="illustrator" class="skill_con" style="display:none;">illustrator</p>
+            <p id="html" class="skill_con" style="display:none;">html</p>
+        </div> -->
+    </dl>
     <div class="project_list">
         <p class="center_title"><img src="./images/project list.png" alt=""></p>
         <p class="sub_title"><img src="./images/web design & lending.png" alt=""></p>
@@ -110,15 +117,22 @@
                     <div class="swiper-slide">
                         <div class="thum"><img src="./images/infini.jpg" alt=""></div>
                         <div class="web_info">
-                            <h3>웹 제목</h3>
-                            <p class="date">2024.07.12 ~ 2024.07.23</p>
-                            <ul>
-                                <li>반응형 웹</li>
-                                <li>사용 프로그램</li>
-                                <li>photoshop, illustrator, figma</li>
-                                <li>제작페이지</li>
-                                <li>앱 메인, 로그인, 마이페이지, 장바구니 ... 총 ?페이지</li>
-                            </ul>
+                            <h3>Infini</h3>
+                            <div class="info_top">
+                                <h2>web redesign(Desktop)</h2>
+                                <div class="info_center">
+                                    <ul class="info_center_right">
+                                        <li>제작기간</li>
+                                        <li>제작페이지</li>
+                                        <li>사용프로그램</li>
+                                    </ul>
+                                    <ul>
+                                        <li>2일</li>
+                                        <li>main page , sub page</li>
+                                        <li>photoshop, ilustrator, figma HTML5, CSS, javascript, gitHub </li>
+                                    </ul>
+                                </div>
+                            </div>
                             <div class="link">
                                 <a href="#" target="_blank">gitHub</a>
                                 <a href="#" target="_blank">기획서</a>
@@ -134,7 +148,7 @@
                             <ul>
                                 <li>반응형 웹</li>
                                 <li>사용 프로그램</li>
-                                <li>photoshop, illustrator, figma</li>
+                                <li>photoshop, ilustrator, figma HTML5, CSS, javascript, gitHub </li>
                                 <li>제작페이지</li>
                                 <li>앱 메인, 로그인, 마이페이지, 장바구니 ... 총 ?페이지</li>
                             </ul>
@@ -155,21 +169,27 @@
         </div>
         <p class="sub_title"><img src="./images/team project.png" alt=""></p>
         <div class="team">
-            <!-- swiper > swiper-wrapper > swiper-slide -->
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="thum"><img src="./images/infini.jpg" alt=""></div>
                         <div class="web_info">
-                            <h3>웹 제목</h3>
-                            <p class="date">2024.07.12 ~ 2024.07.23</p>
-                            <ul>
-                                <li>반응형 웹</li>
-                                <li>사용 프로그램</li>
-                                <li>photoshop, illustrator, figma</li>
-                                <li>제작페이지</li>
-                                <li>앱 메인, 로그인, 마이페이지, 장바구니 ... 총 ?페이지</li>
-                            </ul>
+                            <h3>Infini</h3>
+                            <div class="info_top">
+                                <h2>web redesign(Desktop)</h2>
+                                <div class="info_center">
+                                    <ul class="info_center_right">
+                                        <li>제작기간</li>
+                                        <li>제작페이지</li>
+                                        <li>사용프로그램</li>
+                                    </ul>
+                                    <ul>
+                                        <li>2일</li>
+                                        <li>main page , sub page</li>
+                                        <li>photoshop, ilustrator, figma HTML5, CSS, javascript, gitHub </li>
+                                    </ul>
+                                </div>
+                            </div>
                             <div class="link">
                                 <a href="#" target="_blank">gitHub</a>
                                 <a href="#" target="_blank">기획서</a>
@@ -185,7 +205,7 @@
                             <ul>
                                 <li>반응형 웹</li>
                                 <li>사용 프로그램</li>
-                                <li>photoshop, illustrator, figma</li>
+                                <li>photoshop, ilustrator, figma HTML5, CSS, javascript, gitHub </li>
                                 <li>제작페이지</li>
                                 <li>앱 메인, 로그인, 마이페이지, 장바구니 ... 총 ?페이지</li>
                             </ul>
@@ -199,9 +219,9 @@
                 </div>
                 <!-- 내이게이션이 슬라이드 안에 있을 때 생성 위치 -->
             </div> <!-- e:swiper -->
-            <!-- 내이게이션이 슬라이드 밖에 있을 때 생성 위치 -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
+            <!-- 내이게이션이 슬라이드 밖에 있을 때 생성 위치 -->
             <!-- 작성 후 script 추가 작성2* -->
         </div>
         <p class="sub_title"><img src="./images/SNS Design.png" alt=""></p>
